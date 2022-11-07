@@ -1,0 +1,1 @@
+{"ip":"223.99.1.145","data":{"fox":{"status":"protocol-error","protocol":"fox","result":null,"timestamp":"2021-04-28T12:12:51+08:00","error":"host responds, but is not a fox service"}}}

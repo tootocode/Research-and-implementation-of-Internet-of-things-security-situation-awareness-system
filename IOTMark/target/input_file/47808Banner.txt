@@ -1,0 +1,1 @@
+{"ip":"223.99.170.16","data":{"bacnet":{"status":"io-timeout","protocol":"bacnet","timestamp":"2021-04-28T12:10:47+08:00","error":"read udp 10.0.2.15:40969-\u003e223.99.170.16:47808: i/o timeout"}}}

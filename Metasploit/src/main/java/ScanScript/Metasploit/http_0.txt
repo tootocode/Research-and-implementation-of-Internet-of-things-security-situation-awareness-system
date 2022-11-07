@@ -1,0 +1,14 @@
+{"ip":"69.225.207.90","vendor":"http","module":"exploit/windows/http/mcafee_epolicy_source","result":"VERBOSE => false
+WfsDelay => 0
+EnableContextEncoding => false
+DisablePayloadHandler => true
+RPORT => 81
+SSL => false
+SSLVersion => Auto
+SSLVerifyMode => PEER
+ConnectTimeout => 10
+TCP::max_send_size => 0
+TCP::send_delay => 0
+RHOSTS => 69.225.207.90
+[-] 69.225.207.90:81 - Exploit failed [unreachable]: Rex::ConnectionRefused The connection was refused by the remote host (69.225.207.90:81).
+"}

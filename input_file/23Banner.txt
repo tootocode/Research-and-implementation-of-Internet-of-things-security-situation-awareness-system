@@ -1,0 +1,1 @@
+{"ip":"223.99.211.202","data":{"telnet":{"status":"success","protocol":"telnet","result":{"banner":"User Access Verification\r\n\r\nUsername: ","will":[{"name":"Echo","value":1},{"name":"Suppress Go Ahead","value":3}],"do":[{"name":"Terminal Type","value":24},{"name":"Negotiate About Window Size","value":31}]},"timestamp":"2021-04-28T12:14:42+08:00"}}}

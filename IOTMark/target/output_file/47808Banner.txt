@@ -1,0 +1,1 @@
+{"ip":"61.179.154.240","data":{"bacnet":{"status":"io-timeout","protocol":"bacnet","timestamp":"2021-05-26T17:36:47+08:00","error":"read udp 10.0.2.15:34127-\u003e61.179.154.240:47808: i/o timeout"}}}

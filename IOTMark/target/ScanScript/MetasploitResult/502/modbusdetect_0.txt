@@ -1,0 +1,19 @@
+{"ip":"61.133.125.44:502","Vendor":"Modbus","module":"auxiliary/scanner/scada/modbusdetect","result":"VERBOSE => true
+RPORT => 502
+SSL => false
+SSLVersion => Auto
+SSLVerifyMode => PEER
+ConnectTimeout => 10
+TCP::max_send_size => 0
+TCP::send_delay => 0
+THREADS => 1
+ShowProgress => true
+ShowProgressPercent => 10
+UNIT_ID => 1
+TIMEOUT => 10
+RHOSTS => 61.133.125.44
+DisablePayloadHandler => True
+[-] 61.133.125.44:502     - 61.133.125.44:502 - MODBUS - received incorrect data "SSH-" (not modbus/tcp?)
+[*] 61.133.125.44:502     - Scanned 1 of 1 hosts (100% complete)
+[*] Auxiliary module execution completed
+"}

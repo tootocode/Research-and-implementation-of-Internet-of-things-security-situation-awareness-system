@@ -1,0 +1,1 @@
+{"ip":"61.179.247.174","data":{"dnp3":{"status":"protocol-error","protocol":"dnp3","timestamp":"2021-05-26T18:56:35+08:00","error":"Invalid response for DNP3"}}}

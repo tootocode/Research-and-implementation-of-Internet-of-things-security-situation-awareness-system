@@ -1,0 +1,29 @@
+if(((port.equals("47808")||port.equals("161")||port.equals("3702"))&&!Pattern.matches(".*/.*",target))){
+                        try {
+                            redisLock.lock(10,locknameRedis,true);
+                            String portResult="{\"name\":\""+name+"\","+"\"target\":\""+target+"\","+"\"desc\":\""+desc+"\","+"\"date\":\""+date+"\",\"port\":\""+port+"\","+
+                                    "\"excuteexploit\":\""+excuteexploit+"\","+
+                                    "\"excutetlstest\":\""+excutetlstest
+                                    +"\"}";
+                            Connection connection=activeMQConnectionFactory.createConnection();
+                            connection.start();
+                            Session session = connection.createSession(true, Session.AUTO_ACKNOWLEDGE);
+                            redisLock.lock(10,locknameRedis,true);
+                            javax.jms.Queue queue=session.createQueue(locknameRedis);
+                            MessageProducer producer=session.createProducer(queue);
+                            TextMessage textMessage=session.createTextMessage(portResult);
+                            producer.send(textMessage);
+                            session.commit();
+                            session.close();
+                            producer.close();
+                            connection.close();
+                            redisLock.unlock(locknameRedis);
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                        try {
+                            redisLock.unlock(locknameRedis);
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                    }

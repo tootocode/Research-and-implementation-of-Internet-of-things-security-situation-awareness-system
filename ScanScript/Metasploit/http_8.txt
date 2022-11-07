@@ -1,0 +1,29 @@
+{"ip":"69.225.207.90","vendor":"http","module":"auxiliary/server/capture/http_ntlm","result":"VERBOSE => false
+SRVHOST => 0.0.0.0
+SRVPORT => 8080
+SSL => false
+SSLCompression => false
+TCP::max_send_size => 0
+TCP::send_delay => 0
+HTTP::no_cache => false
+HTTP::chunked => false
+HTTP::header_folding => false
+HTTP::junk_headers => false
+HTTP::compression => none
+HTTP::server_name => Apache
+SendRobots => false
+HTML::unicode => none
+HTML::base64 => none
+HTML::javascript::escape => 0
+CHALLENGE => 1122334455667788
+DOMAIN => DOMAIN
+SERVER => SERVER
+DNSNAME => SERVER
+DNSDOMAIN => example.com
+FORCEDEFAULT => false
+DisablePayloadHandler => True
+[*] Auxiliary module running as background job 3.
+[*] Using URL: http://0.0.0.0:8080/71SG0F
+[*] Local IP: http://192.168.3.3:8080/71SG0F
+[*] Server started.
+"}

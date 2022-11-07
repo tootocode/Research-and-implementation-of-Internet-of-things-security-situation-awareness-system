@@ -1,0 +1,67 @@
+//            Connection connection = activeMQConnectionFactory.createConnection();
+//            connection.start();
+//            Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
+//            Destination destination=session.createQueue("TLSQueue");
+//            MessageConsumer consumer=session.createConsumer(destination);
+//            redisLock.lock(10,lockname,true);
+//            TextMessage msg=(TextMessage) consumer.receive(1000);
+//            redisLock.unlock(lockname);
+//            consumer.close();
+//            session.close();
+//            connection.close();
+//            if(msg!=null){
+//                String markres=msg.getText();
+//                System.out.println("\n");
+//                System.out.println(markres);
+//                System.out.println("\n");
+//                JSONObject arr=(JSONObject) new JSONObject("{\"list\":"+markres+"}").get("list");
+//                String type=arr.getString("Type");
+//                JSONObject temp=(JSONObject) new JSONObject("{\"list\":"+arr.get("iotMarkResult")+"}").get("list");
+//                String IP=temp.getString("ip");
+//                String vendor="";
+//                try{
+//                    vendor=(String) temp.get("Vendor");
+//                }catch (Exception e){
+//                    vendor=(String) temp.get("vendor");
+//                }
+//
+//                String device=temp.getString("Device");
+//                String deviceType=temp.getString("DeviceType");
+//                metasploitWay exploit=new metasploitWay();
+//                Generalmetasploit generalmetasploit=new Generalmetasploit();
+//                if(type.equals("ICS")){
+//                    List<String> exploitresult=exploit.excuteExploit(IP,vendor);
+//                    Record record= RecordFactory.get(ExploitRecord.class);
+//                    for(String result:exploitresult){
+//                        System.out.println(result);
+//                        JSONObject a=(JSONObject) new JSONObject("{\"list\":"+result+"}").get("list");
+//                        String exploitRes=a.getString("result");
+//                        String module=a.getString("module");
+//                        record.addRecord(IP,vendor,deviceType,device,exploitRes,module);
+//                    }
+//                }else if(type.equals("Iot")){
+//                    if(scanconfig.TLSTest){
+//                        Connection connection1=activeMQConnectionFactory.createConnection();
+//                        connection1.start();
+//                        Session session1=connection1.createSession(true, Session.AUTO_ACKNOWLEDGE);
+//                        Queue queue=session1.createQueue("TLSQueue");
+//                        MessageProducer producer=session1.createProducer(queue);
+//                        producer.send(session1.createTextMessage(markres));
+//                        session1.commit();
+//                        session1.close();
+//                        connection1.close();
+//                    }
+//                    if(scanconfig.MetasploitTest){
+//                        String protocol=temp.getString("protocol");
+//                        List<String> exploitresult=generalmetasploit.excuteExploit(IP,protocol);
+//                        Record record= RecordFactory.get(ExploitRecord.class);
+//                        for(String result:exploitresult){
+//                            JSONObject a=(JSONObject) new JSONObject("{\"list\":"+result+"}").get("list");
+//                            String exploitRes=a.getString("result");
+//                            String module=a.getString("module");
+//                            System.out.println(module);
+//                            record.addRecord(IP,vendor,deviceType,device,exploitRes,module);
+//                        }
+//                    }
+//                }
+//            }

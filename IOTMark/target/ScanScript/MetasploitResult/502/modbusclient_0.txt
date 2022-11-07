@@ -1,0 +1,19 @@
+{"ip":"61.133.125.44:502","Vendor":"Modbus","module":"auxiliary/scanner/scada/modbusclient","result":"VERBOSE => true
+RPORT => 502
+SSL => false
+SSLVersion => Auto
+SSLVerifyMode => PEER
+ConnectTimeout => 10
+TCP::max_send_size => 0
+TCP::send_delay => 0
+NUMBER => 1
+UNIT_NUMBER => 1
+ACTION => READ_HOLDING_REGISTERS
+RHOSTS => 61.133.125.44
+DATA_ADDRESS => 40001
+DisablePayloadHandler => True
+[*] Running module against 61.133.125.44
+[*] 61.133.125.44:502 - Sending READ HOLDING REGISTERS...
+[-] 61.133.125.44:502 - Unknown answer
+[*] Auxiliary module execution completed
+"}

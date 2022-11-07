@@ -1,4 +1,5 @@
-#本系统采用前后端分离的方式，前端使用 Vue 编写实现，后端使用 Spring boot框架响应用户的请求，对于系统各个模块的扫描结果，采用 MySQL 进行存储。 
+本系统采用前后端分离的方式，前端使用 Vue 编写实现，后端使用 Spring boot框架响应用户的请求，对于系统各个模块的扫描结果，采用 MySQL 进行存储。 
+
 随着物联网产业的发展，物联网技术的应用越来越广泛。在工业 4.0 的大趋
 势下设备入网为工业生产效率的提高提供了许多切实可行的方案，同时设备入网
 也为人们的生活提供诸多便利。物联网技术在为人们的生产和生活提供便捷的同
@@ -27,5 +28,3 @@
 例如扫描27.221.22.158或27.192.0.0/11，在协议扫描界面<任务名称：Scan 、任务目标：27.221.22.158（IP地址或地址段） 、渗透测试：Yes（点击事件）、 TLS测试：Yes、全端口扫描：No、任务提交时间：2021-09-20（日期组件）、任务描述：其他>；点击提交后，前端调用js代码：get('/findprotocol' + '?name=' + this.form.name + '&target=' + this.form.target + '&desc=' + this.form.desc + '&date=' + this.form.date + '&excuteexploit=' + this.excuteexploit + '&excutetlstest=' + this.excutetlstest + '&allportscan=' + this.allportscan）（字段信息在19中已给出）将信息提交给后端，后端收到信息后，返回给前端字符串‘success’，证明提交成功。/searchProtocollist和/seatchprotocolresult显示和查询扫描的协议，具体字段已在18,20中给出。同理可显示设备扫描、渗透测试、tls测试的结果。
 还可进行设备识别模块单独扫描，<任务名称：Scan 、任务目标：27.221.22.158 、任务提交时间：2021-09-20、任务描述：其他>,提交任务后进行扫描并展示结果（已在21，22,23中给出）。
 其他模块单独运行同设备识别模块。
-45、/datav/chinamap 获取ip位置信息，返回list列表，三个属性，name表示各省名称，num表示ip数量
-/datav/sdmapnum获取ip位置信息，返回list列表，三个属性，name表示山东各市名称，num表示ip数量
